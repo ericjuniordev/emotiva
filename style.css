@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@font-face {
+  font-family: "Computer Says";
+  src: url("assets/computer-says-no.ttf") format("truetype");
+}
 
 * {
   margin: 0;
@@ -8,25 +11,58 @@
 body {
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
   min-height: 100vh;
-  gap: 20px;
   align-items: center;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  justify-content: flex-end;
+  background-image: url(assets/background.png);
+  background-position: center;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 5px #A196FF, 0 0 20px #A196FF, 0 0 20px #A196FF;
+}
+
+h1 {
+  font-family: "Computer Says", sans-serif;
+  color: white;
+  font-size: 7rem;
+  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 5px #A196FF, 0 0 20px #A196FF, 0 0 20px #A196FF;
 }
 
 .painel {
-  border: 2px solid white;
-  color: white;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  padding: 3% 6% 3% 6%;
-  font-size: 1.2rem;
-  font-family: "Krona One", sans-serif;
+  text-align: center;
+  gap: 50px;
+  width: 25%;
+  margin-right: 15%;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Computer Says", sans-serif;
+  gap: 50px;
+  border-radius: 2%;
+  padding: 10%;
+}
+
+.button {
+  border: 2px solid white;
+  padding: 2%;
+  border-radius: 10px;
+  transition: all 0.4s ease 0s;
+}
+
+.button:hover {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+  box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
 }
