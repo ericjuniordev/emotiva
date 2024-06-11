@@ -26,3 +26,4 @@ document.addEventListener("DOMContentLoaded", function() {
         visor.value = "Função não implementada";
     }
 });
+
