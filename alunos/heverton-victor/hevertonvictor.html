@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heverton Victor</title>
     <link rel="stylesheet" href="heverton.css">
-    <script type="text/javascript" src="heverton.js"></script>
 </head>
 <body>
     <header>
@@ -19,36 +18,37 @@
             <textarea class="textArea" id="textarea" cols="1" rows="5" style="resize: none" readonly></textarea>
             <section class="calculadoraButtons"> 
                 <div class="buttons">
-                    <button class="button" onclick="apagar1()">C</button>
+                    <button class="button" onclick="limparTela()">C</button>
                     <button class="button" onclick="apagarTudo()">CE</button>
-                    <button class="button" onclick="dividir()">/</button>
-                    <button class="button" onclick="multiplicar()">*</button>
+                    <button class="button" onclick="adicionae('/')">/</button>
+                    <button class="button" onclick="adicionae('*')">*</button>
                 </div>
                 <div class="buttons">
-                    <button class="button" onclick="sete()">7</button>
-                    <button class="button" onclick="oito()">8</button>
-                    <button class="button" onclick="nove()">9</button>
-                    <button class="button" onclick="subtracao()">-</button>
+                    <button class="button" onclick="adicionae('7')">7</button>
+                    <button class="button" onclick="adicionae('8')">8</button>
+                    <button class="button" onclick="adicionae('9')">9</button>
+                    <button class="button" onclick="adicionae('-')">-</button>
                 </div>
                 <div class="buttons">
-                    <button class="button" onclick="quatro()">4</button>
-                    <button class="button" onclick="cinco()">5</button>
-                    <button class="button" onclick="seis()">6</button>
-                    <button class="button" onclick="soma()">+</button>
+                    <button class="button" onclick="adicionae('4')">4</button>
+                    <button class="button" onclick="adicionae('5')">5</button>
+                    <button class="button" onclick="adicionae('6')">6</button>
+                    <button class="button" onclick="adicionae('+')">+</button>
                 </div>
                 <div class="buttons">
-                    <button class="button" onclick="um()">1</button>
-                    <button class="button" onclick="dois()">2</button>
-                    <button class="button" onclick="tres()">3</button>
+                    <button class="button" onclick="adicionae('1')">1</button> <!-- Aqui estava sem aspas -->
+                    <button class="button" onclick="adicionae('2')">2</button>
+                    <button class="button" onclick="adicionae('3')">3</button>
                     <button class="button" onclick="naoSei()">NU</button>
                 </div>
                 <div class="buttonsEnd">
-                    <button class="buttonEnd1" onclick="zero()">0</button>
-                    <button class="button" onclick="ponto()">.</button>
-                    <button class="buttonEnd2" onclick="resultado()">=</button>
+                    <button class="buttonEnd1" onclick="adicionae('0')">0</button>
+                    <button class="button" onclick="adicionae('.')">.</button>
+                    <button class="buttonEnd2" onclick="calculari()">=</button>
                 </div>
             </section>
         </section>
     </main>
+    <script src="heverton.js"></script>
 </body>
 </html>

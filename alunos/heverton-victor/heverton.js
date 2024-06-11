@@ -1,9 +1,28 @@
-let textArea = document.querySelector("textArea");
+document.addEventListener("DOMContentLoaded", function() {
+    var visor = document.getElementById("textarea");
 
-function um() {
-    document.getElementById("textarea").innerHTML = "1";
-}
+    window.adicionae = function(tecla) {
+        visor.value += tecla;
+        console.log(visor.value);
+    }
 
-function dois() {
-    document.getElementById("textarea").innerHTML = "2";
-}
+    window.limparTela = function() {
+        visor.value = "";
+    }
+
+    window.calculari = function() {
+        try {
+            visor.value = eval(visor.value);
+        } catch (e) {
+            visor.value = "Erro";
+        }
+    }
+
+    window.apagarTudo = function() {
+        visor.value = "";
+    }
+
+    window.naoSei = function() {
+        visor.value = "Função não implementada";
+    }
+});
