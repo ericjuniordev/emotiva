@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Computer Says";
+    src: url("/assets/computer-says-no.ttf") format("truetype");
+  }
+
+  :root {
+    --text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 5px #A196FF, 0 0 20px #A196FF, 0 0 20px #A196FF;
+    --cor-texto: white;
+    --font-size: 3rem;
+    --cor-botao: #4d1cb9;
+    --cor-botao-hover: #361a86;
+  }
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+  }
+  
+  body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    max-height: 100vh;
+    background-image: url(/assets/background-heverton.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  header {
+    display: flex;
+    padding: 2% 0% 0% 2%;
+  }
+
+  .navHeader {
+    font-family: "Computer Says", sans-serif;
+    font-size: 4rem;
+  }
+
+  a {
+    text-decoration: none;
+    text-shadow: var(--text-shadow);
+    color: var(--cor-texto);;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    height: 100vh;
+  }
+
+  h1 {
+    color: var(--cor-texto);
+    text-shadow: var(--text-shadow);
+    font-size: var(--font-size);
+    font-family: "Computer Says", sans-serif;
+  }
+
+  .calculadora {
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+    flex-direction: column;
+    border: 5px #699DFF solid;
+    border-radius: 10px;
+    width: 25%;
+    height: 60%;
+    background-image: linear-gradient(to right top, #5d1cca, #4d1cb9, #3d1ba8, #2e1997, #1f1686, #281786, #301986, #361a86, #502096, #6827a5, #812db4, #9b33c3);
+    animation: borderAnimation 5s linear infinite;
+    border: 2px solid transparent;
+  }
+
+  @keyframes borderAnimation {
+    0% {
+        border: 5px solid rgb(93, 28, 202);
+    }
+    25% {
+        border: 5px solid rgb(77, 28, 185);
+    }
+    50% {
+        border: 5px solid rgb(61, 27, 168);
+    }
+    75% {
+        border: 5px solid rgb(46, 25, 151);
+    }
+    100% {
+        border: 5px solid rgb(31, 22, 134);
+    }
+}
+
+  .textArea {
+    border: none;
+    border-radius: 10px;
+    font-family: "Computer Says", sans-serif;
+    font-size: var(--font-size);
+    color: var(--cor-texto);
+    text-shadow: var(--text-shadow);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: var(--cor-botao);
+    transition: background-color 0.3s ease;
+  }
+
+  .textArea:hover {
+    background-color: var(--cor-botao-hover);
+}
+  .buttonsEnd {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+  }
+
+  .buttonEnd1,
+  .buttonEnd2,
+  .button {
+    width: 20%;
+    height: 60px; /* Aumenta a altura dos botões */
+    border-radius: 8px;
+    font-family: "Computer Says", sans-serif; /* Aplica a fonte estilizada */
+    font-size: 2rem; /* Ajusta o tamanho da fonte dos botões */
+    color: var(--cor-texto);
+    background-color: var(--cor-botao);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+
+  .buttonEnd1:hover,
+.buttonEnd2:hover,
+.button:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+  .calculadoraButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 5%;
+  }

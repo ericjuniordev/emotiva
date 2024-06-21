@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heverton Victor</title>
+    <link rel="stylesheet" href="heverton.css">
+</head>
+<body>
+    <header>
+        <nav class="navHeader">
+            <a href="/index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo">Calculadora Digital!</h1>
+        <section class="calculadora">
+            <textarea class="textArea" id="textarea" cols="1" rows="5" style="resize: none" readonly></textarea>
+            <section class="calculadoraButtons"> 
+                <div class="buttons">
+                    <button class="button" onclick="limparTela()">C</button>
+                    <button class="button" onclick="apagarTudo()">CE</button>
+                    <button class="button" onclick="adicionae('/')">/</button>
+                    <button class="button" onclick="adicionae('*')">*</button>
+                </div>
+                <div class="buttons">
+                    <button class="button" onclick="adicionae('7')">7</button>
+                    <button class="button" onclick="adicionae('8')">8</button>
+                    <button class="button" onclick="adicionae('9')">9</button>
+                    <button class="button" onclick="adicionae('-')">-</button>
+                </div>
+                <div class="buttons">
+                    <button class="button" onclick="adicionae('4')">4</button>
+                    <button class="button" onclick="adicionae('5')">5</button>
+                    <button class="button" onclick="adicionae('6')">6</button>
+                    <button class="button" onclick="adicionae('+')">+</button>
+                </div>
+                <div class="buttons">
+                    <button class="button" onclick="adicionae('1')">1</button> <!-- Aqui estava sem aspas -->
+                    <button class="button" onclick="adicionae('2')">2</button>
+                    <button class="button" onclick="adicionae('3')">3</button>
+                    <button class="button" onclick="naoSei()">NU</button>
+                </div>
+                <div class="buttonsEnd">
+                    <button class="buttonEnd1" onclick="adicionae('0')">0</button>
+                    <button class="button" onclick="adicionae('.')">.</button>
+                    <button class="buttonEnd2" onclick="calculari()">=</button>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="heverton.js"></script>
+</body>
+</html>
+
