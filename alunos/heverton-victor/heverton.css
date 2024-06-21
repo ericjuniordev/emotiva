@@ -24,7 +24,7 @@
     flex-direction: column;
     background-color: black;
     max-height: 100vh;
-    background-image: url(/assets/background-heverton.png);
+    background-image: url(../../assets/background-heverton.png);
     background-position: center;
     background-size: cover;
   }
